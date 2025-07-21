@@ -65,6 +65,8 @@ section {
   display: block;
 }
 
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
@@ -11840,12 +11842,12 @@ textarea.form-control {
 }
 
 .ftco-section {
-  padding: 7em 0;
+  /* padding: 7em 0; */
   position: relative;
 }
 @media (max-width: 767.98px) {
   .ftco-section {
-    padding: 6em 0;
+    padding: 1px 0;
   }
 }
 
@@ -12650,8 +12652,14 @@ textarea.form-control {
 @media (max-width: 768px) {
   .hero-main-img{
  width: 100%;
+  height: auto !important;
+    min-height: 100vh; /* Optional full viewport height */
+    max-height: 748px; /* Keep your desired max height */
 }
 .text {
-  margin-top: 28rem;
+  margin-top: 2px;
+}
+.d-flex {
+  padding: 15px;
 }
 }
