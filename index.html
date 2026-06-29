@@ -1202,19 +1202,23 @@
           width: 100% !important;
         }
 
-        /* ── Image: small circle at TOP, before text ── */
+        /* ── Image: circle at TOP, before text ── */
         .hero-image-side {
           order: -1;
-          margin-bottom: 18px;
+          margin-bottom: 20px;
         }
         .hero-img-frame::before {
           border-radius: 50% !important;
+          background: conic-gradient(var(--accent), #e0a826, var(--accent)) !important;
         }
         .hero-img-frame img {
-          width: 100px !important;
-          height: 100px !important;
+          width: 140px !important;
+          height: 140px !important;
           border-radius: 50% !important;
-          object-position: top;
+          object-fit: cover !important;
+          object-position: center top !important;
+          border: 3px solid var(--accent) !important;
+          box-shadow: 0 0 0 6px rgba(252,191,73,0.15), 0 8px 32px rgba(0,0,0,0.5) !important;
         }
         .hero-badge-card {
           display: none !important;
@@ -1293,7 +1297,7 @@
         #resume-section,
         #project-section,
         #contact-section {
-          padding: 60px 0;
+          padding: 48px 0;
         }
         .sec-title {
           font-size: 1.7rem !important;
@@ -1326,8 +1330,8 @@
           font-size: 1.7rem !important;
         }
         .hero-img-frame img {
-          width: 88px !important;
-          height: 88px !important;
+          width: 120px !important;
+          height: 120px !important;
         }
         .hero-stats {
           gap: 18px !important;
